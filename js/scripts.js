@@ -9,7 +9,23 @@ $(document).ready(function(){
   $("questions").submit(event){
     event.preventDefault();
 
-  if (time &&  )
+  if (time <= 1) {
+    alert("Sorry, you don't have enough time for any tracks")
+  } else if {
+    (time > 1 && style === "back-end" && company === "Small start-up") {
+      $(".ruby").show();
+  } else if {
+    (time > 1 && style === "back-end" && company === "Large company")
+      $(".php").show();
+  } else if {
+    (time > 1 && style === "front-end" && company ==="Small start-up")
+      $(".css").show();
+  }  else if {
+    (time > 1 && style === "front-end" && company ==== "Large company")
+      $(".design").show();
+
+  }
+  }
 
 
 
