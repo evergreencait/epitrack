@@ -1,5 +1,5 @@
 h1 {
-  font-family: nunito;
+  font-family: 'Bungee Shade', cursive;
 }
 
 .jumbotron {
@@ -25,4 +25,8 @@ h2 {
 
 .ruby, .php, .design, .css {
   display: none;
+}
+
+.results {
+  border: 10px solid white;
 }
