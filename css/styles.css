@@ -8,7 +8,7 @@ h1 {
 }
 
 body {
-  background-color:#ADD8E6;
+  background-color:#0099CC;
 }
 
 p {
@@ -28,5 +28,10 @@ h2 {
 }
 
 .results {
-  border: 10px solid white;
+  border: 5px solid white;
+}
+
+.container {
+  border: 10px solid #000059;
+  background-color: #86c5da;
 }
