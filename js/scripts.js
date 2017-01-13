@@ -11,7 +11,7 @@ $(document).ready(function() {
 
       if (userTime <= 1) {
         alert("Sorry, you don't have enough time for any tracks");
-      } else if (userTime > 1 && userStyle === "back-end" && userCompany === "Start-up" && userStyle === "Javascript" || "CSS" && city === "Seattle" || "Portland"){
+      } else if (userTime > 1 && userStyle === "Back-end" && userCompany === "Start-up" && userStyle === "Javascript" || "CSS" && city === "Seattle" || "Portland"){
           $(".ruby").show();
       } else if (userTime > 1 && userStyle === "back-end" && userCompany === "Large company"  && userStyle === "Javascript" || "CSS" && userCity === "Seattle" || "Portland"){
           $(".php").show();
