@@ -4,33 +4,34 @@
   <meta charset="utf-8">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/jquery-3.1.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <title>Language Track Suggester</title>
 </head>
 <body>
 <!--form div-->
 <!--city question-->
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Language Track Suggester</h1>
-    </div>
-    <form id="questions">
-        <label for="city">
-          <h4>Do you live in Seattle or Portland?</h4>
-        </label>
-        <input id="city" class="form-control" type="text">
+<div class="container">
+  <div class="jumbotron">
+    <h1>Language Track Suggester</h1>
+  </div>
+  <div class="form">
+  <form id="questions">
+    <label for="city">
+    <h4>Do you live in Seattle or Portland?</h4>
+    </label>
+    <input id="city" class="form-control" type="text">
 <!--end city question-->
 <!--time question-->
     <label for="time">
-      <h4>How much time do you have (in months)?</h4>
+    <h4>How much time do you have (in months)?</h4>
     </label>
     <input id="time" class="form-control" type="text">
 <!--end of time question-->
 <!--style question-->
   <h4>Do you want to work in front-end or back-end development?</h4>
 
-  <div class="radio" class="form-control">
+  <div class= "radio" class= "form-control">
     <label>
       <input type="radio" name="style" value="front-end">
       Front-end
@@ -42,6 +43,7 @@
       <input type="radio" name="style" value="back-end">
       Back-end
     </label>
+  </div>
 <!--end style question-->
 <!--learn question-->
   <h4>Did you like learning Javascript or CSS more?</h4>
@@ -57,6 +59,7 @@
         <input type="radio" name="learn" value="css">
         CSS
       </label>
+    </div>
 <!--learn question-->
 <!--company question-->
   <h4>Do you want to work for a large company or a start-up?</h4>
@@ -102,5 +105,9 @@
       <img src="images/css.png" alt="picture of CSS icon">
       <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual and aural layout — are the two basic languages involved in the building of web pages and web applications.</p>
     </div>
+  </div>
+</div>
+</div>
+</div>
   </body>
 </html>

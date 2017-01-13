@@ -6,7 +6,7 @@ var company = $("input:checked").val();
 
 
 $(document).ready(function(){
-  $("questions").submit(event){
+  $("form#questions").submit(event){
     event.preventDefault();
 
   if (time <= 1) {
@@ -23,12 +23,7 @@ $(document).ready(function(){
   }  else if {
     (time > 1 && style === "front-end" && company ==== "Large company")
       $(".design").show();
-
-  }
-  }
-
-
-
-
+  } else {
+    alert("sorry, we need more information to make a recommendation")
   }
 });
