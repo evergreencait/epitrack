@@ -5,11 +5,12 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-1.12.0.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <title>Language Track Suggester</title>
 </head>
 <body>
-  <!--form div-->
-  <!--city question-->
+<!--form div-->
+<!--city question-->
   <div class="container">
     <div class="jumbotron">
       <h1>Language Track Suggester</h1>
@@ -19,37 +20,59 @@
           <h4>Do you live in Seattle or Portland?</h4>
         </label>
         <input id="city" class="form-control" type="text">
-        <!--end city question-->
-        <!--style question-->
-        <h4>Do you want to work in front-end or back-end development?</h4>
+<!--end city question-->
+<!--time question-->
+    <label for="time">
+      <h4>How much time do you have (in months)?</h4>
+    </label>
+    <input id="time" class="form-control" type="text">
+<!--end of time question-->
+<!--style question-->
+  <h4>Do you want to work in front-end or back-end development?</h4>
 
-        <div class="radio" class="form-control">
-          <label>
-            <input type="radio" name="style" value="front-end" class="form-control">
-            Front-end
-          </label>
-        </div>
+  <div class="radio" class="form-control">
+    <label>
+      <input type="radio" name="style" value="front-end">
+      Front-end
+    </label>
+    </div>
 
-        <div class="radio" class="form-control">
-          <label>
-            <input type="radio" name="style" value="back-end" class="form-control">
-            Back-end
-          </label>
-        <!--end style question-->
-        <!--company question-->
-        <h4>Do you want to work for a large company or a start-up?</h4>
-        <div class="radio" class="form-control">
-          <label>
-            <input type="radio" name="company" value="front-end" class="form-control">
-            Large company
-          </label>
-        </div>
+  <div class="radio" class="form-control">
+    <label>
+      <input type="radio" name="style" value="back-end">
+      Back-end
+    </label>
+<!--end style question-->
+<!--learn question-->
+  <h4>Did you like learning Javascript or CSS more?</h4>
+    <div class="radio" class="form-control">
+      <label>
+        <input type="radio" name="learn" value="javascript">
+        Javascript
+      </label>
+    </div>
 
-        <div class="radio" class="form-control">
-          <label>
-            <input type="radio" name="company" value="back-end" class="form-control">
-            Small start-up
-          </label>
-        </div
-    </body>
-    </html>
+    <div class="radio" class="form-control">
+      <label>
+        <input type="radio" name="learn" value="css">
+        CSS
+      </label>
+<!--learn question-->
+<!--company question-->
+  <h4>Do you want to work for a large company or a start-up?</h4>
+  <div class="radio" class="form-control">
+    <label>
+      <input type="radio" name="company" value="large">
+      Large company
+    </label>
+  </div>
+
+  <div class="radio" class="form-control">
+    <label>
+      <input type="radio" name="company" value="start-up">
+      Small start-up
+    </label>
+<!--end of company question-->
+    </div
+  </body>
+</html>

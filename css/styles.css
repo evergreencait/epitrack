@@ -1,0 +1,12 @@
+h1 {
+  font-family: nunito;
+}
+
+.jumbotron {
+  background-image: url("https://thoughtcatalog.files.wordpress.com/2015/12/hires.jpg");
+  color: white;
+}
+
+body {
+  background-color:#ADD8E6;
+}
