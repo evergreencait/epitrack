@@ -10,8 +10,8 @@ This website allows you to answer questions about yourself to determine what tra
 
 ## Setup/Installation Requirements
 
-Clone this repository (https://github.com/evergreencait/epitrack)
-Open index.html in web browser
+* Clone this repository (https://github.com/evergreencait/epitrack)
+* Open index.html in web browser
 
 
 ## Support and contact details
@@ -22,4 +22,4 @@ Contact: caitlinhines@me.com
 
 
 Copyright (c) 2016 Caitlin Hines
-This software is licensed under the MIT license.
+* This software is licensed under the MIT license.
