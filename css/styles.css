@@ -10,3 +10,19 @@ h1 {
 body {
   background-color:#ADD8E6;
 }
+
+p {
+  padding-top: 30px;
+}
+
+img {
+  padding-top: 30px;
+}
+
+h2 {
+  font-family: nunito;
+}
+
+.ruby, .php, .design, .css {
+  display: none;
+}
