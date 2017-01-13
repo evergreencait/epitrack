@@ -16,21 +16,16 @@
   <div class="jumbotron">
     <h1>Language Track Suggester</h1>
   </div>
-  <div class="form">
-    <form id="questions">
-
-  <div class="form group" id="city">
-    <label for="city">
-    <h4>Do you live in Seattle or Portland?</h4>
-    </label>
+  <div id="questions">
+  <form>
+  <div class="form group">
+    <label>Do you live in Seattle or Portland?</label>
     <input id="city" class="form-control" type="text">
   </div>
 <!--end city question-->
 <!--time question-->
-  <div class="form group" id="time">
-    <label for="time">
-    <h4>How much time do you have (in months)?</h4>
-    </label>
+  <div class="form group">
+    <label>How much time do you have (in months)?</label>
     <input id="time" class="form-control" type="text">
   </div>
 <!--end of time question-->
@@ -82,10 +77,11 @@
       Small start-up
     </label>
   </div>
-</div>
 <!--end of company question-->
 <!--button-->
-  <button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
 <!--end of button-->
   <div class="results">
   <h2>Track suggestion:</h2>
