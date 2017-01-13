@@ -19,13 +19,13 @@
   </div>
   <div id="questions">
   <form>
-  <div class="form group">
+  <div class="form group" id="city">
     <label>Do you live in Seattle or Portland?</label>
     <input id="city" class="form-control" type="text">
   </div>
 <!--end city question-->
 <!--time question-->
-  <div class="form group">
+  <div class="form group" id="time">
     <label>How much time do you have (in months)?</label>
     <input id="time" class="form-control" type="text">
   </div>
@@ -33,51 +33,50 @@
 <!--style question-->
   <h4>Do you want to work in front-end or back-end development?</h4>
 
-  <div class= "radio" class="form-control">
-    <label>
-      <input type="radio" name="style" value="front-end">
-      Front-end
-    </label>
-  </div>
+  <div class="radio">
+  <label>
+    <input type="radio" name="style" value="front-end">
+    Front-end
+  </label>
+</div>
 
-  <div class="radio" class="form-control">
-    <label>
-      <input type="radio" name="style" value="back-end">
-      Back-end
-    </label>
-  </div>
+<div class="radio">
+  <label>
+    <input type="radio" name="style" value="back-end">
+    Back-end
+  </label>
+</div>
 <!--end style question-->
 <!--learn question-->
   <h4>Did you like learning Javascript or CSS more?</h4>
-    <div class="radio" class="form-control">
-      <label>
-        <input type="radio" name="learn" value="javascript">
-        Javascript
-      </label>
-    </div>
+  <div class="radio">
+  <label>
+    <input type="radio" name="learn" value="javascript">
+    Javascript
+  </label>
+</div>
 
-    <div class="radio" class="form-control">
-      <label>
-        <input type="radio" name="learn" value="css">
-        CSS
-      </label>
-    </div>
+<div class="radio">
+  <label>
+    <input type="radio" name="learn" value="css">
+    CSS
+  </label>
+</div>
 <!--learn question-->
 <!--company question-->
-  <h4>Do you want to work for a large company or a start-up?</h4>
-  <div class="radio" class="form-control" >
-    <label>
-      <input type="radio" name="company" value="large">
-      Large company
-    </label>
-  </div>
-
-  <div class="radio" class="form-control">
-    <label>
-      <input type="radio" name="company" value="start-up">
-      Start-up
-    </label>
-  </div>
+<h4>Do you want to work for a large company or a start-up?</h4>
+<div class="radio">
+  <label>
+    <input type="radio" name="company" value="large">
+    Large
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="company" value="start-up">
+    Start-up
+  </label>
+</div>
 <!--end of company question-->
 <!--button-->
 <button type="submit" class="btn btn-primary">Submit</button>

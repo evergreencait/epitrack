@@ -1,23 +1,23 @@
-var time = parseInt($("input#time").val());
-var style = $("input:checked").val();
-var learn = $("input:checked").val();
-var company = $("input:checked").val();
-var city = $("input#city").val();
+var userTime = parseInt($("input#time").val());
+var userStyle = $("input:radio[name=style]:checked").val();
+var userLearn = $("input:radio[name=learn]:checked").val();
+var userCompany = $("input:radio[name=company]:checked").val();
+var userCity = $("#city").val();
 
 
 $(document).ready(function() {
   $("#questions form").submit(function(event){
     event.preventDefault();
 
-      if (time <= 1) {
+      if (userTime <= 1) {
         alert("Sorry, you don't have enough time for any tracks");
-      } else if (time > 1 && style === "back-end" && company === "Start-up" && style === "Javascript" || "CSS" && city === "Seattle" || "Portland"){
+      } else if (userTime > 1 && userStyle === "back-end" && userCompany === "Start-up" && userStyle === "Javascript" || "CSS" && city === "Seattle" || "Portland"){
           $(".ruby").show();
-      } else if (time > 1 && style === "back-end" && company === "Large company"  && style === "Javascript" || "CSS" && city === "Seattle" || "Portland"){
+      } else if (userTime > 1 && userStyle === "back-end" && userCompany === "Large company"  && userStyle === "Javascript" || "CSS" && userCity === "Seattle" || "Portland"){
           $(".php").show();
-      } else if (time > 1 && style === "front-end" && company ==="Small start-up"  && style === "Javascript" || "CSS" && city === "Seattle" || "Portland"){
+      } else if (userTime > 1 && userStyle === "front-end" && userCompany ==="Small start-up"  && userStyle === "Javascript" || "CSS" && userCity === "Seattle" || "Portland"){
           $(".css").show();
-      }  else if (time > 1 && style === "front-end" && company === "Large company"  && style === "Javascript" || "CSS" && city === "Seattle" || "Portland"){
+      }  else if (userTime > 1 && userStyle === "front-end" && userCompany === "Large company"  && userStyle === "Javascript" || "CSS" && userCity === "Seattle" || "Portland"){
           $(".design").show();
       } else {
         alert("Sorry! We need more information to make a recommendation")
