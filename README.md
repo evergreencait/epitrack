@@ -10,7 +10,7 @@ This website allows you to answer questions about yourself to determine what tra
 
 ## Setup/Installation Requirements
 
-Clone this repository
+Clone this repository (https://github.com/evergreencait/epitrack)
 Open index.html in web browser
 
 
