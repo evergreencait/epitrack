@@ -5,11 +5,12 @@ var company = $("input:radio[name=company]:checked").val();
 var city = $("input#city").val();
 
 
-$(document).ready(function() {
-  $("#questions form").submit(function(event){
-    event.preventDefault();
 
-      if (time <= 1) {
+$(document).ready(function() {
+  $("form#question").submit(function(event){
+
+
+      if (time < 1) {
         alert("Sorry, you don't have enough time to do any tracks")
       } else {
       if (city === "Seattle") {
@@ -22,18 +23,19 @@ $(document).ready(function() {
         }  else if (style === "front-end" && company === "Large company"){
           $(".design").show();
         }
-      } else if (city === "Portland") {
+    } else if (city === "Portland") {
       if (style === "Back-end" && company === "Start-up"){
-       $(".ruby").show();
-        } else if (style === "back-end" && company === "Large company"){
+        $(".ruby").show();
+      } else if (style === "back-end" && company === "Large company"){
        $(".php").show();
-        } else if (style === "front-end" && company ==="Small start-up"){
+      } else if (style === "front-end" && company ==="Small start-up"){
        $(".css").show();
-        }  else if (style === "front-end" && company === "Large company"){
+      }  else if (style === "front-end" && company === "Large company"){
        $(".design").show();
-        } else
+      } else
           alert("Sorry! We need more information to make a recommendation")
-        }
       }
+    }
+      event.preventDefault();
     });
   });
