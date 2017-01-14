@@ -12,6 +12,7 @@ This website allows you to answer questions about yourself to determine what tra
 
 * Clone this repository (https://github.com/evergreencait/epitrack)
 * Open index.html in web browser
+* Link to check out github branch (https://evergreencait.github.io/epitrack/)
 
 
 ## Support and contact details
