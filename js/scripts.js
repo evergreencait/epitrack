@@ -1,5 +1,12 @@
+
 $(document).ready(function(){
   $("form#questions").submit(function(event){
+
+    var styleInput = $("input[name=style]:checked").val();
+    var companyInput = $("input[name=company]:checked").val();
+    var cityInput = $("input[name=city]:checked").val();
+    var timeInput = parseInt($("#time").val());
+    var personInput = $("input#person").val()
 
     $(".ruby").hide();
     $(".php").hide();
@@ -7,14 +14,7 @@ $(document).ready(function(){
     $(".design").hide();
 
 
-    var styleInput = $("input[name=style]:checked").val();
-    var companyInput = $("input[name=company]:checked").val();
-    var cityInput = $("input[name=city]:checked").val();
-    var timeInput = $("#time").val();
-    var personInput = $("input#person").val()
-
-
-      if (timeInput === "0-1 month") {
+      if (timeInput <= 1) {
              alert("Sorry, you don't have time to do a track!");
            } else {
              if (cityInput === "portland") {
