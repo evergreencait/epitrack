@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.1.1.js"></script>
-  <script src="js/scripts.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
   <title>Language Track Suggester</title>
@@ -16,26 +16,41 @@
     <div class="jumbotron">
       <h1>Language Track Suggester</h1>
     </div>
-    <div class="form">
+
       <form id="questions">
 
-        <!--city question-->
+
         <div class="form-group">
-          <label for="city">Do you live in Seattle or Portland?</label>
-          <input id="city" class="form-control" type="text">
+            <label for="person">Your name:</label>
+            <input id="person" class="form-control" type="text">
+        </div>
+
+        <!--city question-->
+        <h4>Do you live in Seattle or Portland?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="city" value="seattle">
+            Seattle
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="city" value="portland">
+            Portland
+          </label>
         </div>
         <!--end city question-->
 
         <!--time question-->
-        <div class="form-group">
-          <label for="time">How much time do you have to learn (in months)?</label>
-          <input id="time" class="form-control" type="text">
-        </div>
+        <h3>How much time do you have (in months)?</h3>
+       <select class="form-control" id="time">
+         <option>0-1 month</option>
+         <option>1-2 months</option>
+         <option>3-4 months</option>
+       </select>
         <!--end of time question-->
-
         <!--style question-->
         <h4>Do you want to work in front-end or back-end development?</h4>
-
         <div class="radio">
           <label>
             <input type="radio" name="style" value="front-end">
@@ -87,10 +102,10 @@
         <!--button-->
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    </div>
+
     <!--end of button-->
     <div class="results">
-      <h2>Track suggestion:</h2>
+      <h2>Track suggestion for <span class="person"></span>:</h2>
       <div class="ruby">
         <h2>Ruby</h2>
         <img src="images/ruby.png" alt="picture of ruby icon">
