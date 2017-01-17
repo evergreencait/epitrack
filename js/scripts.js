@@ -1,6 +1,7 @@
-
 $(document).ready(function(){
   $("form#questions").submit(function(event){
+    event.preventDefault();
+
 
     var styleInput = $("input[name=style]:checked").val();
     var companyInput = $("input[name=company]:checked").val();
@@ -47,6 +48,5 @@ $(document).ready(function(){
                }
              }
            }
-           event.preventDefault();
          });
        });
